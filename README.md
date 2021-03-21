@@ -6,7 +6,7 @@ http://localhost:8083/swagger-ui/index.html?
 
 Important note for POST and PUT API-
 
-/user/{userId}/cart
+/user/U001/cart
 
 Mandatory  attributes which needs to be passed in request model 
 {
@@ -23,26 +23,26 @@ Mandatory  attributes which needs to be passed in request model
 
 2 - POST to create the item with existing cart .
 
-/user/{userId}/cart/{cartId}/item
+/user/U001/cart/C0042/item
 
 {
 
 "name": "string",
 "description": "string",
-"price": 0,
-"quantity": 0
+"price": 10.52,
+"quantity": 2
 }
 
 3- PUT  - update the item in cart .
 
-/user/{userId}/cart/{cartId}/item/{itemId}
+/user/U001/cart/C001/item/3
 
 {
 "id": 3,
-"name": "string",
-"description": "string",
-"price": 0,
-"quantity": 0
+"name": "test",
+"description": "test",
+"price": 10.52,
+"quantity": 2
 }
 
 
