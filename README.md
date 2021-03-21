@@ -55,6 +55,15 @@ userid , cartid and createdAfter
 
 So if there would be no filter criteria then all carts will be returned  from database 
 
+Cart Price and cart status not stored into database  and caluclated value will be returned from the system based on the number of items has been added and the expiary time defined in the constant file.
+
+Database scripts location-
+celfocus-backend-challenge\src\main\resources\script
+
+Swagger Yaml Location -
+
+celfocus-backend-challenge\src\main\resources\api
+
 Maven  commands  -
 
 mvn clean install for build the project.
