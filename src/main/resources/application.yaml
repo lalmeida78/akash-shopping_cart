@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  datasource:
+    url: jdbc:h2:mem:shopdb
+    username: admin
+    password: admin
+  h2:
+    console:
+      path: /h2-console
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+security:
+  checksum:
+    type: MD5
+
